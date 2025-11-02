@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
+# AgriSmart Bénin
 
-## Project info
+Site web AgriTech moderne pour l'agriculture au Bénin, propulsé par l'intelligence artificielle.
 
-**URL**: https://lovable.dev/projects/5348cefa-1801-4c2a-81ab-5bf2abd99248
+## 🌾 Fonctionnalités
 
-## How can I edit this code?
+- **Conseils Agricoles Personnalisés** : Recommandations IA basées sur votre culture, région et type de sol
+- **Suivi Météorologique** : Prévisions en temps réel et alertes pour protéger vos cultures
+- **Détection de Maladies** : Identifiez les maladies des plantes par analyse d'image IA
+- **Dashboard de Rendement** : Visualisez et analysez vos performances agricoles
+- **Blog & Tutoriels** : Ressources éducatives pour améliorer vos pratiques
+- **Support Client** : Formulaire de contact et chatbot intelligent
 
-There are several ways of editing your application.
+## 🚀 Technologies Utilisées
 
-**Use Lovable**
+- **Frontend** : React 18 + TypeScript + Vite
+- **Styling** : Tailwind CSS + shadcn/ui
+- **Backend** : Lovable Cloud (Supabase)
+- **IA** : Lovable AI Gateway (Google Gemini)
+- **Graphiques** : Recharts
+- **Routing** : React Router v6
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5348cefa-1801-4c2a-81ab-5bf2abd99248) and start prompting.
+## 📦 Installation Locale
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prérequis
+- Node.js 18+ et npm
 
-**Use your preferred IDE**
+### Étapes
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+1. **Cloner le projet**
+```bash
 git clone <YOUR_GIT_URL>
+cd agrismart-benin
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. **Installer les dépendances**
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. **Lancer le serveur de développement**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Le site sera accessible sur `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌐 Déploiement
 
-**Use GitHub Codespaces**
+### Déploiement sur Lovable (Recommandé)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Ouvrez votre projet sur [Lovable](https://lovable.dev)
+2. Cliquez sur le bouton "Publish" en haut à droite
+3. Votre site sera déployé automatiquement
 
-## What technologies are used for this project?
+### Déploiement sur Netlify
 
-This project is built with:
+1. **Via l'interface Netlify**
+   - Connectez votre dépôt GitHub à Netlify
+   - Build command: `npm run build`
+   - Publish directory: `dist`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. **Via la CLI Netlify**
+```bash
+# Installer la CLI Netlify
+npm install -g netlify-cli
 
-## How can I deploy this project?
+# Se connecter
+netlify login
 
-Simply open [Lovable](https://lovable.dev/projects/5348cefa-1801-4c2a-81ab-5bf2abd99248) and click on Share -> Publish.
+# Déployer
+netlify deploy --prod
+```
 
-## Can I connect a custom domain to my Lovable project?
+### Variables d'Environnement
 
-Yes, you can!
+Les variables suivantes sont gérées automatiquement par Lovable Cloud :
+- `VITE_SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY`
+- `LOVABLE_API_KEY`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Pour un déploiement externe, créez un fichier `.env` avec ces variables.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🎨 Personnalisation du Design
+
+Le système de design est défini dans :
+- `src/index.css` : Variables CSS et tokens de couleur
+- `tailwind.config.ts` : Configuration Tailwind
+
+Couleurs principales :
+- **Primary** : Vert agricole (`hsl(142 70% 35%)`)
+- **Secondary** : Tons terre (`hsl(30 40% 92%)`)
+- **Accent** : Bleu ciel (`hsl(200 75% 55%)`)
+
+## 📱 Pages du Site
+
+1. **/** - Page d'accueil
+2. **/conseils** - Conseils agricoles IA
+3. **/meteo** - Suivi météo
+4. **/maladies** - Détection de maladies
+5. **/dashboard** - Dashboard de rendement
+6. **/blog** - Blog et tutoriels
+7. **/contact** - Contact et FAQ
+
+## 🔧 Scripts Disponibles
+
+```bash
+npm run dev          # Démarre le serveur de développement
+npm run build        # Build pour la production
+npm run preview      # Prévisualise le build de production
+npm run lint         # Vérifie le code avec ESLint
+```
+
+## 🤝 Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
+
+## 📄 Licence
+
+Ce projet est sous licence MIT.
+
+## 🌍 Contact
+
+- **Email** : contact@agrismart.bj
+- **Téléphone** : +229 XX XX XX XX
+- **Adresse** : Cotonou, Bénin
+
+---
+
+Développé avec ❤️ pour les agriculteurs du Bénin
