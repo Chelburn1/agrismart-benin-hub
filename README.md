@@ -45,14 +45,6 @@ npm run dev
 
 Le site sera accessible sur `http://localhost:8080`
 
-## 🌐 Déploiement
-
-### Déploiement sur Lovable (Recommandé)
-
-1. Ouvrez votre projet sur [Lovable](https://lovable.dev)
-2. Cliquez sur le bouton "Publish" en haut à droite
-3. Votre site sera déployé automatiquement
-
 ### Déploiement sur Netlify
 
 1. **Via l'interface Netlify**
@@ -121,10 +113,7 @@ Ce projet est sous licence MIT.
 
 ## 🌍 Contact
 
-- **Email** : contact@agrismart.bj
-- **Téléphone** : +229 XX XX XX XX
+- **Email** : agrinova66@gmail.com
+- **Téléphone** : +229 01 95 48 85 43
 - **Adresse** : Cotonou, Bénin
 
----
-
-Développé avec ❤️ pour les agriculteurs du Bénin
